@@ -1,0 +1,182 @@
+/* src/components/BankAdmin/ManageOffers.css */
+.manage-offers-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  color: #333;
+}
+
+.manage-offers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e0e0e0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto; 
+  white-space: nowrap; 
+}
+
+.manage-offers-logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.manage-offers-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.manage-offers-nav-link {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.manage-offers-nav-link:hover {
+  color: #007bff;
+}
+
+.manage-offers-btn-logout {
+  background: none;
+  border: none;
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.manage-offers-btn-logout:hover {
+  color: #007bff;
+}
+
+.manage-offers-main {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.manage-offers-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.manage-offers-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.manage-offers-error {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.manage-offers-success-message {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  justify-content: center;
+}
+
+.manage-offers-table-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.manage-offers-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.manage-offers-table th,
+.manage-offers-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.manage-offers-table th {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.manage-offers-table td {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.manage-offers-table tr:last-child td {
+  border-bottom: none;
+}
+
+.manage-offers-status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}
+
+.manage-offers-status.active {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.manage-offers-status.inactive {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.manage-offers-action-btn {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.manage-offers-activate-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.manage-offers-activate-btn:hover {
+  background-color: #218838;
+}
+
+.manage-offers-deactivate-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.manage-offers-deactivate-btn:hover {
+  background-color: #c82333;
+}

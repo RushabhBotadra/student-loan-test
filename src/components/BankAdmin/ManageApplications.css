@@ -1,0 +1,199 @@
+/* src/components/BankAdmin/ManageApplications.css */
+.manage-applications-container {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  .manage-applications-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e0e0e0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+  }
+  
+  .manage-applications-logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+  
+  .manage-applications-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .manage-applications-nav-link {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+  }
+  
+  .manage-applications-nav-link:hover {
+    color: #007bff;
+  }
+  
+  .manage-applications-btn-logout {
+    background: none;
+    border: none;
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .manage-applications-btn-logout:hover {
+    color: #007bff;
+  }
+  
+  .manage-applications-main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+  
+  .manage-applications-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+  }
+  
+  .manage-applications-error {
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .manage-applications-success-message {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    justify-content: center;
+  }
+  
+  .manage-applications-content {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .manage-applications-pending-list {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .manage-applications-section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+  }
+  
+  .manage-applications-pending-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .manage-applications-pending-card.selected {
+    background-color: #e9ecef;
+  }
+  
+  .manage-applications-pending-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1a1a1a;
+  }
+  
+  .manage-applications-pending-details {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .manage-applications-details {
+    flex: 2;
+  }
+  
+  .manage-applications-details-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .manage-applications-details-meta {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+  }
+  
+  .manage-applications-details-section {
+    margin-bottom: 20px;
+  }
+  
+  .manage-applications-details-section h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+  }
+  
+  .manage-applications-details-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .manage-applications-details-column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .manage-applications-details-column p {
+    font-size: 0.95rem;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .manage-applications-actions-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .manage-applications-action-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .manage-applications-generate-btn {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .manage-applications-generate-btn:hover {
+    background-color: #0056b3;
+  }

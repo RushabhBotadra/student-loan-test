@@ -1,0 +1,81 @@
+/* src/components/BankAdmin/BankAdmin.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e0e0e0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .branding {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+  
+  .logo {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    white-space: nowrap;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .btn-logout {
+    background: none;
+    border: none;
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .btn-logout:hover {
+    color: #007bff;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px 15px;
+    }
+  
+    .actions {
+      gap: 10px;
+    }
+  
+    .nav-link,
+    .btn-logout {
+      font-size: 0.9rem;
+      padding: 5px;
+    }
+  }

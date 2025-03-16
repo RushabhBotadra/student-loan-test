@@ -1,0 +1,389 @@
+/* src/components/BankRepresentative/ProcessApplications.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.process-applications-container {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F0F8FF;
+  min-height: 100vh;
+  color: #2C3E50;
+  overflow-x: hidden;
+}
+
+/* Header Styling */
+.process-applications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, #ADD8E6 0%, #B0E0E6 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.process-applications-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.process-applications-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.process-applications-welcome-message {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+.process-applications-nav-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.process-applications-nav-link:hover {
+  color: #FFD700;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.process-applications-btn-logout {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #6c757d;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.process-applications-btn-logout:hover {
+  background-color: #333333;
+  transform: translateY(-5px);
+}
+
+/* Main Content Styling */
+.process-applications-main {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 120px; /* Adjusted for header height */
+}
+
+.process-applications-loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-top: 50px;
+}
+
+.process-applications-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2C3E50;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.process-applications-subtitle {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Alert Styling */
+.process-applications-alert {
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  background-color: #fff3f3;
+  color: #dc3545;
+  border: 1px solid #f5c6cb;
+}
+
+.process-applications-alert-icon {
+  margin-right: 12px;
+}
+
+.process-applications-close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: auto;
+  color: #dc3545;
+  transition: color 0.2s ease;
+}
+
+.process-applications-close-btn:hover {
+  color: #721c24;
+}
+
+.process-applications-success-message {
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  justify-content: center;
+}
+
+/* Content Layout */
+.process-applications-content {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Pending Applications */
+.process-applications-pending-list {
+  flex: 1;
+  max-width: 300px;
+}
+
+.process-applications-section-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2C3E50;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.process-applications-no-applications {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-top: 20px;
+}
+
+.process-applications-pending-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.process-applications-pending-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(173, 216, 230, 0.5);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-applications-pending-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.process-applications-pending-card.selected {
+  /* background: rgba(255, 215, 0, 0.1); */
+  border: 1px solid;
+}
+
+.process-applications-pending-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2C3E50;
+}
+
+.process-applications-pending-details {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Application Details */
+.process-applications-details {
+  flex: 2;
+  min-width: 300px;
+}
+
+.process-applications-details-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(173, 216, 230, 0.5);
+}
+
+.process-applications-details-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+.process-applications-edit-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #4682B4;
+  cursor: pointer;
+  padding: 2px 5px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.process-applications-edit-btn:hover {
+  color: #2F4F4F;
+}
+
+/* Stack Sections Vertically */
+.process-applications-details-section {
+  margin-bottom: 20px;
+}
+
+.process-applications-details-section h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2C3E50;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+/* Side-by-Side Fields within Each Section */
+.process-applications-details-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.process-applications-details-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.process-applications-details-column p {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.process-applications-no-selection {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-top: 20px;
+}
+
+/* Assignee Dropdown */
+.process-applications-assignee-select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid rgba(173, 216, 230, 0.5);
+  border-radius: 8px;
+  box-sizing: border-box;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.9) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="%232C3E50" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>') no-repeat right 10px center;
+  background-size: 12px;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 5px;
+}
+
+.process-applications-assignee-select:focus {
+  border-color: #4682B4;
+  outline: none;
+}
+
+/* Action Buttons */
+.process-applications-actions-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.process-applications-action-btn {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 120px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.process-applications-approve-btn {
+  background-color: #28a745;
+  color: #FFFFFF;
+}
+
+.process-applications-approve-btn:hover {
+  background-color: #1e7e34;
+  transform: translateY(-5px);
+}
+
+.process-applications-reject-btn {
+  background-color: #dc3545;
+  color: #FFFFFF;
+}
+
+.process-applications-reject-btn:hover {
+  background-color: #a71d2a;
+  transform: translateY(-5px);
+}
+
+.process-applications-success-message {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #e0ffe0;
+  border-radius: 5px;
+}
+
+.process-applications-alert {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #ffe0e0;
+  border-radius: 5px;
+  position: relative;
+}
+
+.process-applications-close-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
